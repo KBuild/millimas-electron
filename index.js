@@ -1,8 +1,9 @@
 const electron = require('electron');
 const {app, BrowserWindow} = electron;
+const config = require('./config.json');
 
 const init = () => {
-    let win = new BrowserWindow({width: 480, height: 800});
+    let win = new BrowserWindow(config.browser);
     win.on('closed', () => {
       win = null
     });
