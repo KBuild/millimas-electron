@@ -1,0 +1,22 @@
+{
+  "name": "millimas-electron",
+  "version": "1.0.0",
+  "description": "Web game 'THE iDOLM@STER: Million Live!' Web viewer app",
+  "main": "index.js",
+  "build": {
+      "appId": "net.gree-apps.imas"
+  },
+  "scripts": {
+      "start": "electron ./index.js",
+      "pack": "node_modules/.bin/build --dir",
+      "dist": "node_modules/.bin/build -mwl"
+  },
+  "author": "kbuild",
+  "license": "MIT",
+  "devDependencies": {
+    "electron-builder": "^15.1.1",
+    "electron-packager": "^8.5.2"
+  },
+  "dependencies": {
+  }
+}
